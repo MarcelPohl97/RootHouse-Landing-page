@@ -1,0 +1,6 @@
+Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
+
+15.05 Todos:
+->Init Git Repo
+-> Install Sass and setup 7-1 folder structure
+-> Build the nav and Background of the firstpage
