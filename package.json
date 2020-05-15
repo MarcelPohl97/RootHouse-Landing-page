@@ -1,0 +1,22 @@
+{
+  "name": "roothouse",
+  "version": "1.0.0",
+  "description": "Landing page for RootHouse",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcelPohl97/RootHouse-Landing-page.git"
+  },
+  "author": "Marcel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcelPohl97/RootHouse-Landing-page/issues"
+  },
+  "homepage": "https://github.com/MarcelPohl97/RootHouse-Landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
