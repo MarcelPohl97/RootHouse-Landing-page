@@ -1,28 +1,23 @@
+/* Variables */
 /* Init Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
-* {
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-}
+html {
+  font-size: 62.5%; }
 
 body {
-    font-size: 62.5%;
-    line-height: 1.7;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    position: relative;
-}
+  line-height: 1.7;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  position: relative; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
-    list-style: none;
-}
-
-/* Variables */
-:root {
-    --white-color:#fff;
-}
+  list-style: none; }
