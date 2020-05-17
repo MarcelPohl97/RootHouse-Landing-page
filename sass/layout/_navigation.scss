@@ -1,0 +1,123 @@
+.nav {
+    width: 100%;
+    font-size:1.8rem;
+    color: $secondary-color;
+
+    &__items {
+        display: flex;
+        width: 100%;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__item {
+        margin-top: 5rem;
+    }
+
+    &__item--border {
+        border-bottom: .1px solid $white-color;
+        border-top: .1px solid $white-color;
+        padding:2rem 4rem;
+        @include basic-transition-interaction;
+    }
+
+    &__item--border:nth-child(1) {
+        border-left: .1px solid $white-color;
+    }
+
+    &__item--border:nth-child(9) {
+        border-right: .1px solid $white-color;
+    }
+
+    &__item--border:hover {
+        color: $primary-color-2;
+        border-bottom: .1px solid $primary-color-2;
+        border-left: .1px solid $primary-color-2;
+        border-right: .1px solid $primary-color-2;
+        border-top: .1px solid $primary-color-2;
+        
+    }
+
+    &__item--brand {
+        position: relative;
+        display: flex;
+        height:190px;
+        width:190px;
+        border-radius: 190px;
+        padding:0 2rem;
+        border: .1px solid $white-color;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color-2, 0.5));
+    }
+
+    &__item--brand:before {
+        content: '';
+        width: 29px;
+        height: .1px;
+        background: $white-color;
+        position: absolute;
+        top:26px;
+        left:0;
+    }
+
+    &__item--brand:after {
+        content: '';
+        width: 29px;
+        height: .1px;
+        background: $white-color;
+        position: absolute;
+        top:26px;
+        right:0;
+    }
+
+    &__brand--img {
+        font-size:2.5rem;
+    }
+
+    &__brand--secondary {
+        font-size: 1.4rem;
+    }
+
+    &__button {
+        padding: 0.8rem 2rem;
+        color: $primary-color-2;
+        border: 1px solid $primary-color-2;
+        background:transparent;
+        @include basic-transition-interaction;
+    }
+
+    &__button::before {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        margin-right: .6rem;
+        font-size: 1.5rem;
+        color:$secondary-color-2;
+    }
+
+    &__button:nth-child(1)::before {
+        content: "\f879"
+    }
+
+    &__button:nth-child(2)::before {
+        content: "\f0e0"
+    }
+
+    &__button:hover {
+        background: linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color-2, 0.5));
+        color: $secondary-color;
+    }
+
+    &__button--left {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    &__button--right {
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        margin-left: -5px;
+    }
+
+}
