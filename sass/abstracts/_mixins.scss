@@ -1,0 +1,8 @@
+/*Padding for complete Site */
+@mixin site-padding {
+    padding: 0 4rem;
+}
+
+@mixin basic-transition-interaction {
+    transition: all .2s;
+}

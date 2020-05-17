@@ -9,8 +9,53 @@
     <title>RootHouse</title>
 </head>
 <body>
-    <h1>Boilerplate for vanilla JS Apps</h1>
-    <p>Hello World</p>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item nav__item--border">Home</li>
+                <li class="nav__item nav__item--border">Create your House</li>
+                <li class="nav__item nav__item--border">What we build</li>
+                <li class="nav__item nav__item--border">About</li>
+                <li class="nav__item nav__item--border">Contact</li>
+                <li class="nav__item nav__item--border">Service</li>
+                <li class="nav__item nav__item--brand">
+                    <div class="nav__brand">
+                        <i class="fas fa-leaf nav__brand--img"></i>
+                        <h2 class="nav__brand--main">RootHouse</h2>
+                        <p class="nav__brand--secondary">Nature Houses</p>
+                    </div>
+                </li>
+                <li class="nav__item nav__item--border">8 (600) 11 22 845</li>
+                <li class="nav__item nav__item--border">
+                    <div class="nav__buttons">
+                        <a href="#" class="nav__button nav__button--left">Schedule Call</a>
+                        <a href="#" class="nav__button nav__button--right">Send Email</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__text">
+            <h1 class="header__heading">
+                <span class="header__heading--main">RootHouse</span>
+                <span class="header__heading--secondary">is where you feel Home</span>
+            </h1>
+            <a href="#" class="btn btn--lightgreen">Explore our Houses</a>
+        </div>
+        <div class="header__showcases">
+            <div class="header__showcase">
+                <img src="/img/tree.svg" alt="Nature Tree" class="header__showcase--img">
+                <p class="header__showtext">Nature first</p>
+            </div>
+            <div class="header__showcase">
+                <img src="/img/wood (1).svg" alt="Chop Wood" class="header__showcase--img">
+                <p class="header__showtext">All Natural</p>
+            </div>
+            <div class="header__showcase">
+                <img src="/img/nail.svg" alt="Build House" class="header__showcase--img">
+                <p class="header__showtext">Selfmade Houses</p>
+            </div>
+        </div>
+    </header>
     <script src="app.js"></script>
 </body>
 </html>

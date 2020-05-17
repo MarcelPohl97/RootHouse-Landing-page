@@ -1,47 +1,18 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'base/reset';
+@import 'base/typography';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
 
-@import "components/pages/home";
-@import "components/button";
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/dropdown';
 
-@import "components/layout/header";
-
-/* Variables */
-$white-color: #fff;
-$dark-color: #333;
+@import 'pages/home';
 
 
-/* Init Reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    line-height: 1.7;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    position: relative;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
