@@ -13,6 +13,6 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 
 
 -> todos until heading to next section: 
-->fix hover bug 
-->think about showcase svg icons or fontawesome
+-> fix hover bug on nav
+-> animation for button hover and click
 -> refactor css code 

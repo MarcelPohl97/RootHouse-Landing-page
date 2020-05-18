@@ -12,7 +12,8 @@
     }
 
     &__item {
-        margin-top: 5rem;
+        margin-top: 2rem;
+        cursor:pointer;
     }
 
     &__item--border {
@@ -36,7 +37,6 @@
         border-left: .1px solid $primary-color-2;
         border-right: .1px solid $primary-color-2;
         border-top: .1px solid $primary-color-2;
-        
     }
 
     &__item--brand {
@@ -89,7 +89,7 @@
     }
 
     &__button::before {
-        font-family: "Font Awesome 5 Free"; 
+        font-family: "Font Awesome 5 Pro"; 
         font-weight: 900;
         margin-right: .6rem;
         font-size: 1.5rem;
@@ -105,7 +105,7 @@
     }
 
     &__button:hover {
-        background: linear-gradient(to right, rgba($primary-color, 0.5), rgba($primary-color-2, 0.5));
+        background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
         color: $secondary-color;
     }
 
