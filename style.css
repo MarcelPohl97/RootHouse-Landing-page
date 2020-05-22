@@ -1,5 +1,8 @@
 /* Variables */
 /*Padding for complete Site */
+html {
+  font-size: 62.5%; }
+
 *,
 *::before,
 *::after {
@@ -13,9 +16,47 @@ a {
 ul {
   list-style: none; }
 
+body {
+  line-height: 1.7;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.heading {
+  text-transform: uppercase;
+  display: inline-block; }
+  .heading__primary {
+    font-size: 5rem; }
+  .heading__secondary {
+    font-size: 4rem; }
+  .heading__tertiary {
+    font-size: 3rem; }
+  .heading__quaternary {
+    font-size: 2.5rem; }
+  .heading__paragraph {
+    font-size: 1.8rem; }
+  .heading__minigraph {
+    font-size: 1.2rem; }
+
+.margin-medium {
+  margin: 4rem 0; }
+
+.margin-moderate {
+  margin: 3rem 0; }
+
+.margin-small {
+  margin: 2rem 0; }
+
+.margin-micro {
+  margin: 1rem 0; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+.margin-bottom-small {
+  margin-top: 2rem; }
+
 .nav {
   width: 100%;
-  font-size: 1.8rem;
   color: #FEFDE8; }
   .nav__items {
     display: flex;
@@ -37,20 +78,17 @@ ul {
     border-right: 0.1px solid #fff; }
   .nav__item--border:hover {
     color: #a8e063;
-    border-bottom: 0.1px solid #a8e063;
-    border-left: 0.1px solid #a8e063;
-    border-right: 0.1px solid #a8e063;
-    border-top: 0.1px solid #a8e063; }
+    border: 0.1px solid #a8e063; }
   .nav__item--brand {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     height: 190px;
     width: 190px;
     border-radius: 190px;
     padding: 0 2rem;
     border: 0.1px solid #fff;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(to right, rgba(86, 171, 47, 0.5), rgba(168, 224, 99, 0.5)); }
   .nav__item--brand:before {
     content: '';
@@ -107,24 +145,21 @@ ul {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  padding: 0 4rem; }
+  padding: 0 6rem; }
   .header__text {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
   .header__heading {
     color: #FEFDE8;
     text-align: center;
-    text-transform: uppercase;
-    margin: 4rem 0; }
+    text-transform: uppercase; }
   .header__heading--main {
-    font-size: 5rem;
     display: block;
     font-weight: 400;
     letter-spacing: 2.5rem; }
   .header__heading--secondary {
-    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1rem; }
   .header__showcases {
@@ -134,10 +169,8 @@ ul {
     margin-top: -2rem;
     text-align: center; }
   .header__showTitle {
-    margin: 4rem 0;
     color: #FEFDE8;
-    text-align: center;
-    font-size: 2.5rem; }
+    text-align: center; }
   .header__special {
     display: block;
     color: #a8e063; }
@@ -169,12 +202,10 @@ ul {
     font-size: 3rem;
     color: #a8e063; }
   .header__showtext {
-    font-size: 1.8rem;
     color: #fff; }
   .header__showIcon {
     font-size: 6rem;
-    color: #a8e063;
-    margin-top: 2rem; }
+    color: #a8e063; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -190,13 +221,43 @@ ul {
   color: #fff;
   background: linear-gradient(to right, #56ab2f, #a8e063); }
 
-html {
-  font-size: 62.5%; }
+.services__title {
+  color: #111B05; }
 
-body {
-  line-height: 1.7;
-  font-family: "Lato", sans-serif;
-  font-weight: 400; }
+.services__boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.services__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.services__icon {
+  color: #111B05; }
+
+.services__info {
+  color: #FEFDE8; }
+
+.services__number {
+  color: #111B05; }
+  .services__number:before, .services__number:after {
+    content: "\f068";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 1rem; }
+  .services__number:before {
+    margin-right: .5rem; }
+  .services__number:after {
+    margin-left: .5rem; }
+
+.services-section {
+  width: 100%;
+  padding: 0 6rem;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  text-align: center; }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

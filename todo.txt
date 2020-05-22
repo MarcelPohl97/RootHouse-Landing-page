@@ -1,6 +1,6 @@
 Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 
-15.05 Todos:
+15.05:
 ->Init Git Repo
 -> Build the nav and Background of the firstpage
 
@@ -11,8 +11,15 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 -> finished nav, header textbox and showcase
 
 
+18.05
+-> added animations
 
--> todos until heading to next section: 
--> fix hover bug on nav
--> animation for button hover and click
--> refactor css code 
+20.05
+-> refactored css code
+-> started working on section services
+
+
+22.05
+-> finished section services
+
+Todos: add padding to sites and remove margin

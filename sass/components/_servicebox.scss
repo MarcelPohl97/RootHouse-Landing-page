@@ -1,0 +1,43 @@
+.services {
+
+    &__title {
+        color: $dark-color;
+    }
+
+    &__boxes {
+        @include flex-row-space;
+    }
+
+    &__box {
+        @include flex-column-center;
+    }
+
+    &__icon {
+        color: $dark-color;;
+    }
+
+    &__info {
+        color: $secondary-color;
+    }
+
+    &__number {
+        color: $dark-color;
+        &:before,
+        &:after {
+            content: "\f068";
+            
+            font-family: "Font Awesome 5 Pro"; 
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        &:before {
+            margin-right: .5rem;
+        }
+
+        &:after {
+            margin-left: .5rem;
+        }
+    }
+}
+

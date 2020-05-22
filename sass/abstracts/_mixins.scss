@@ -1,8 +1,27 @@
 /*Padding for complete Site */
 @mixin site-padding {
-    padding: 0 4rem;
+    padding: 0 6rem;
 }
 
 @mixin basic-transition-interaction {
     transition: all .2s;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
