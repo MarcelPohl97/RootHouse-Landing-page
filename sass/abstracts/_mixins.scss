@@ -1,6 +1,10 @@
 /*Padding for complete Site */
 @mixin site-padding {
-    padding: 0 6rem;
+    padding: 6rem 6rem;
+}
+
+@mixin top-bottom-padding {
+    padding: 4rem 0;
 }
 
 @mixin basic-transition-interaction {

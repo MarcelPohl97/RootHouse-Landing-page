@@ -1,0 +1,31 @@
+.awards {
+    text-align: center;
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translate(-50%, -50%);
+        color:$secondary-color-3;
+    }
+
+    &__title {
+        text-align: center;
+        color: $dark-color;
+    }
+
+    &__title--secondary {
+        display: block;
+    }
+
+    &__instruction {
+        color: $dark-color;
+    }
+
+    &__info {
+        max-width: 100ch;
+        text-align: center;
+        color: $dark-color;
+        text-shadow: 0 0 5px rgba(0,0,0,0.15);
+    }
+}

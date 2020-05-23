@@ -3,6 +3,27 @@
     @include site-padding;
     background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
     text-align:center;
+    position:relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 110%;
+        left:50%;
+        height:125px;
+        width:170px;
+        border-radius: 170px 170px 0 0;
+        background:$white-color;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.awards-section {
+    width: 100%;
+    @include site-padding;
+    @include flex-column-center;
+    position:relative;
+    background-color: $white-color;
 }
 
 

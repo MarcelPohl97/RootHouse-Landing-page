@@ -1,4 +1,4 @@
-.btn {
+.btn-primary {
     &,
     &:link,
     &:visited {
@@ -15,6 +15,33 @@
     &--lightgreen {
         color: $white-color;
         background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
+    }
+}
+
+.btn-secondary {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .3rem;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 2rem;
+        @include basic-transition-interaction;
+    }
+
+    &--lightgreen {
+        color: $primary-color-2;
+        border-bottom: 1px solid $primary-color-2;
+
+        &:hover {
+            color: $secondary-color;
+            background: $primary-color-2;
+            box-shadow: 0 1rem 2rem rgba($dark-color, .15);
+            transform: translateY(-3px);
+
+        }
     }
 }
 
