@@ -22,7 +22,6 @@ const drawTree = (startX, startY, len, angle, branchWidth, bodyColor, leafColor)
         ctx.bezierCurveTo(10, -len/2, -10, -len/2, 0, -len);
     }
     ctx.stroke();
-
     if(len < 30) {
         //leafs
         ctx.beginPath();
@@ -31,10 +30,8 @@ const drawTree = (startX, startY, len, angle, branchWidth, bodyColor, leafColor)
         ctx.restore();
         return;
     }
-
     drawTree(0, -len, len * 0.85, angle + curve, branchWidth * 0.7);
     drawTree(0, -len, len * 0.85, angle - curve, branchWidth * 0.7);
-
     ctx.restore();
 }
 

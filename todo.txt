@@ -25,4 +25,7 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 23.05
 -> added more padding on bottom and top of sections, added about section, fractal tree js
 
-todo: clean up js code, start working on house section
+24.05
+-> added build section, carousel
+
+todo: clean up js code, find a fix for carousel buttons they are to wide, add images, text, header

@@ -26,5 +26,13 @@
     background-color: $white-color;
 }
 
+.buildings-section {
+    width: 100%;
+    @include site-padding;
+    @include flex-column-center;
+    position:relative;
+    background-color: $secondary-color-5;
+}
+
 
 

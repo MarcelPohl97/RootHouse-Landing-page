@@ -12,7 +12,8 @@ html {
   margin: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 ul {
   list-style: none; }
@@ -43,6 +44,15 @@ body {
 
 .margin-medium-bottom {
   margin-bottom: 4rem; }
+
+.margin-medium-all {
+  margin: 4rem; }
+
+.margin-medium-sides {
+  margin: 0 4rem; }
+
+.margin-big-sides {
+  margin: 0 6rem; }
 
 .margin-moderate {
   margin: 3rem 0; }
@@ -263,6 +273,57 @@ body {
     box-shadow: 0 1rem 2rem rgba(17, 27, 5, 0.15);
     transform: translateY(-3px); }
 
+.carousel {
+  width: 100%;
+  z-index: 3000; }
+  .carousel-cell {
+    width: 300px;
+    height: 200px;
+    margin-right: 2.5rem;
+    background: #8C8;
+    border-radius: 3px;
+    counter-increment: gallery-cell; }
+
+.flickity-page-dots {
+  display: none; }
+
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next {
+  position: absolute;
+  top: -62px;
+  background: transparent;
+  color: #9D9E97;
+  font-family: inherit;
+  font-size: 1.8rem;
+  transition: all .2s; }
+  .flickity-prev-next-button.previous:hover,
+  .flickity-prev-next-button.next:hover {
+    background: transparent;
+    color: #a8e063; }
+
+.flickity-prev-next-button.previous {
+  left: 5px !important; }
+  .flickity-prev-next-button.previous::before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f060";
+    margin-right: 1rem; }
+  .flickity-prev-next-button.previous::after {
+    content: 'Previous'; }
+
+.flickity-prev-next-button.next {
+  right: 25px !important; }
+  .flickity-prev-next-button.next::before {
+    content: 'Next'; }
+  .flickity-prev-next-button.next::after {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f061";
+    margin-left: 1rem; }
+
+.flickity-button-icon {
+  display: none; }
+
 .services__title {
   color: #111B05; }
 
@@ -325,6 +386,16 @@ body {
   flex-direction: column;
   position: relative;
   background-color: #FDFDFB; }
+
+.buildings-section {
+  width: 100%;
+  padding: 6rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #F6FAE3; }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
