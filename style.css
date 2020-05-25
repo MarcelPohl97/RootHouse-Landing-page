@@ -241,6 +241,9 @@ body {
     color: #111B05;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
 
+.buildings__title {
+  color: #111B05; }
+
 .btn-primary, .btn-primary:link, .btn-primary:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -278,11 +281,51 @@ body {
   z-index: 3000; }
   .carousel-cell {
     width: 300px;
-    height: 200px;
+    height: 300px;
     margin-right: 2.5rem;
-    background: #8C8;
+    background: transparent;
     border-radius: 3px;
-    counter-increment: gallery-cell; }
+    counter-increment: gallery-cell;
+    position: relative;
+    overflow: hidden; }
+    .carousel-cell:before {
+      background: #F6FAE3;
+      content: '';
+      position: absolute;
+      top: 62.5%;
+      left: 50%;
+      height: 40px;
+      width: 80px;
+      border-radius: 80px 80px 0 0;
+      transform: translate(-50%, -50%); }
+  .carousel-img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 3px; }
+  .carousel-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 66.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900; }
+  .carousel-meter {
+    color: #111B05; }
+  .carousel-line {
+    height: 1px;
+    width: 35px;
+    background-color: #9D9E97; }
+  .carousel-quadrat {
+    color: #a8e063; }
+  .carousel-info {
+    text-align: center;
+    z-index: 3000 !important; }
+  .carousel-secondary {
+    display: block; }
 
 .flickity-page-dots {
   display: none; }

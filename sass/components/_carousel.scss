@@ -4,13 +4,65 @@
 
     &-cell {
         width: 300px;
-        height: 200px;
+        height: 300px;
         margin-right: 2.5rem;
-        background: #8C8;
+        background: transparent;
         border-radius: 3px;
         counter-increment: gallery-cell;
+        position: relative;
+        overflow:hidden;
+
+        &:before {
+            background: $secondary-color-5;
+            content: '';
+            position: absolute;
+            top: 62.5%;
+            left: 50%;
+            height: 40px;
+            width: 80px;
+            border-radius: 80px 80px 0 0;
+            transform: translate(-50%, -50%);
+        }
     }
-    
+
+    &-img {
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+        border-radius: 3px;
+    }
+
+    &-size {
+        @include flex-column-center;
+        position: absolute;
+        top: 66.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+    }
+
+    &-meter {
+        color: $dark-color;
+    }
+
+    &-line {
+        height: 1px;
+        width: 35px;
+        background-color: $secondary-color-4;
+    }
+
+    &-quadrat {
+        color: $primary-color-2;
+    }
+
+    &-info {
+        text-align: center;
+        z-index: 3000 !important;
+    }
+
+    &-secondary {
+        display:block;
+    }
 }
 
 .flickity-page-dots {
