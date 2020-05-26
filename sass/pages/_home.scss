@@ -1,5 +1,4 @@
 .services-section {
-    width: 100%;
     @include site-padding;
     background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
     text-align:center;
@@ -19,7 +18,6 @@
 }
 
 .awards-section {
-    width: 100%;
     @include site-padding;
     @include flex-column-center;
     position:relative;
@@ -27,12 +25,34 @@
 }
 
 .buildings-section {
-    width: 100%;
     @include site-padding;
     @include flex-column-center;
     position:relative;
     background-color: $secondary-color-5;
+    padding-bottom: 15rem !important;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 108%;
+        left:50%;
+        height:270px;
+        width:550px;
+        border-radius: 550px 550px 0 0;
+        background:$white-color;
+        transform: translate(-50%, -50%)
+    }
 }
+
+.trends-section {
+    width: 100%;
+    @include site-padding;
+    @include flex-row-center;
+    position:relative;
+    background-color: $white-color;
+}
+
+
 
 
 

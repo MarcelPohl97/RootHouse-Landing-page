@@ -258,6 +258,10 @@ body {
   color: #FDFDFB;
   background: linear-gradient(to right, #56ab2f, #a8e063); }
 
+.btn-primary--brown {
+  color: #FDFDFB;
+  background: #CAAA79; }
+
 .btn-secondary, .btn-secondary:link, .btn-secondary:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -322,8 +326,7 @@ body {
   .carousel-quadrat {
     color: #a8e063; }
   .carousel-info {
-    text-align: center;
-    z-index: 3000 !important; }
+    text-align: center; }
   .carousel-secondary {
     display: block; }
 
@@ -403,8 +406,16 @@ body {
   background-color: #FDFDFB;
   z-index: 3000; }
 
+.trends__button {
+  position: absolute;
+  top: -8%; }
+
+.trends__trend {
+  width: 50%;
+  border-radius: 3px;
+  height: 300px; }
+
 .services-section {
-  width: 100%;
   padding: 6rem 6rem;
   background: linear-gradient(to right, #56ab2f, #a8e063);
   text-align: center;
@@ -421,7 +432,6 @@ body {
     transform: translate(-50%, -50%); }
 
 .awards-section {
-  width: 100%;
   padding: 6rem 6rem;
   display: flex;
   justify-content: center;
@@ -431,14 +441,33 @@ body {
   background-color: #FDFDFB; }
 
 .buildings-section {
-  width: 100%;
   padding: 6rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-color: #F6FAE3; }
+  background-color: #F6FAE3;
+  padding-bottom: 15rem !important; }
+  .buildings-section:after {
+    content: '';
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    height: 270px;
+    width: 550px;
+    border-radius: 550px 550px 0 0;
+    background: #FDFDFB;
+    transform: translate(-50%, -50%); }
+
+.trends-section {
+  width: 100%;
+  padding: 6rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #FDFDFB; }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)

@@ -1,0 +1,13 @@
+.trends {
+
+    &__button {
+        position: absolute;
+        top:-8%;
+    }
+
+    &__trend {
+        width: 50%;
+        border-radius: 3px;
+        height: 300px;
+    }
+}
