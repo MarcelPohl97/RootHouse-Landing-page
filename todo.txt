@@ -31,4 +31,5 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 25.05 
 -> finished carousel
 
-todo: clean up js code, find a fix for carousel buttons they are to wide, maybe add fig caption on hover for image, add curve at the end builds section
+todo: add a hover effect to grid items like the one from natours with border, get pictures for indoor and outdoor, add buy your house button to what we build section 
+fixes: clean up js code, find a fix for carousel buttons they are to wide, maybe add fig caption on hover for image, 

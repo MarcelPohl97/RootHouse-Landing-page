@@ -47,7 +47,7 @@
 .trends-section {
     width: 100%;
     @include site-padding;
-    @include flex-row-center;
+    @include flex-column-center;
     position:relative;
     background-color: $white-color;
 }

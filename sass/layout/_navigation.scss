@@ -47,22 +47,22 @@
 
     &__item--brand:before {
         content: '';
-        width: 29px;
+        width: 31px;
         height: .1px;
         background: $white-color;
         position: absolute;
-        top:26px;
-        left:0;
+        top:24px;
+        left:-1px;
     }
 
     &__item--brand:after {
         content: '';
-        width: 29px;
+        width: 31px;
         height: .1px;
         background: $white-color;
         position: absolute;
-        top:26px;
-        right:0;
+        top:24px;
+        right:-1px;
     }
 
     &__brand--img {
