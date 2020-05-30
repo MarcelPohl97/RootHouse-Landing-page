@@ -28,7 +28,7 @@
     @include site-padding;
     @include flex-column-center;
     position:relative;
-    background-color: $secondary-color-5;
+    background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
     padding-bottom: 15rem !important;
 
     &:after {

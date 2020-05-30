@@ -1,9 +1,13 @@
 .buildings {
 
     &__title {
-        color: $dark-color;
+        color: $white-color;
     }
 
-
+    &__button {
+        position: absolute;
+        bottom:-3.25rem;
+        z-index:3000;
+    }
 
 }

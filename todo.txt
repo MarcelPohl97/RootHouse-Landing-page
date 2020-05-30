@@ -31,5 +31,11 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 25.05 
 -> finished carousel
 
-todo: add a hover effect to grid items like the one from natours with border, get pictures for indoor and outdoor, add buy your house button to what we build section 
+26.05
+-> added button to carousel and curve
+
+27.05
+-> added grid of trend images
+
+todo: get pictures for indoor and outdoor, add buy your house button to what we build section 
 fixes: clean up js code, find a fix for carousel buttons they are to wide, maybe add fig caption on hover for image, 

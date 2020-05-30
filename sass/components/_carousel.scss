@@ -13,10 +13,10 @@
         overflow:hidden;
 
         &:before {
-            background: $secondary-color-5;
+            background-color: $white-color;
             content: '';
             position: absolute;
-            top: 62.5%;
+            top: 60%;
             left: 50%;
             height: 40px;
             width: 80px;
@@ -30,12 +30,13 @@
         width: 300px;
         height: 200px;
         border-radius: 3px;
+        border: 2px solid $white-color;
     }
 
     &-size {
         @include flex-column-center;
         position: absolute;
-        top: 66.5%;
+        top: 61%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: 900;
@@ -48,11 +49,11 @@
     &-line {
         height: 1px;
         width: 35px;
-        background-color: $secondary-color-4;
+        background-color: $dark-color;
     }
 
     &-quadrat {
-        color: $primary-color-2;
+        color: $dark-color;
     }
 
     &-info {
@@ -73,14 +74,13 @@
     position: absolute;
     top: -62px;
     background: transparent;
-    color: $secondary-color-4;
+    color:$white-color;
     font-family: inherit;
     font-size: 1.8rem;
     @include basic-transition-interaction;
 
     &:hover {
         background: transparent;
-        color: $primary-color-2;
     }
 }
 
