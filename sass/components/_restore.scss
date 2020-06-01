@@ -1,0 +1,86 @@
+.restore {
+
+    &__sign {
+        @include flex-row-space;
+
+    }
+
+    &__line {
+        width: 100%;
+        height: 3px;
+        background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
+
+    }
+
+    &__icon {
+        color: $secondary-color-3;
+    }
+
+    &__object {
+        display: inline-block;
+    }
+
+    &__img {
+        position: relative;
+        width: 520;
+        height: 315px;
+
+        &:before {
+            position:absolute;
+            content:'';
+            height: 45px;
+            width: 90px;
+            border-radius: 90px 90px 0 0;
+            background-color: $white-color;
+            bottom: -10px;
+            left:50%;
+            transform: translate(-50%, 0);
+            z-index:1;
+            
+        }
+    }
+
+    &__images {
+        object-fit: cover;
+        position: absolute;
+        height:315px;
+        width:520px;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        border-radius: 520px 520px 0 0;
+        z-index:0;
+    }
+
+    &__condition {
+        position: absolute;
+        bottom: 2px;
+        left:50%;
+        transform: translate(-50%, 0);
+        z-index:1;
+        color: $secondary-color-3;
+    }
+
+    &__name {
+        position: relative;
+
+        &:before,
+        &:after {
+            content:"";
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $secondary-color-4;
+            width: 50px;
+            height: 2px;
+        }
+
+        &:before {
+            left: 310px;
+        }
+
+        &:after {
+            right: 260px;
+        }
+    }
+}

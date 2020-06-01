@@ -52,6 +52,14 @@
     background-color: $white-color;
 }
 
+.restore-section {
+    width: 100%;
+    @include site-padding;
+    text-align: center;
+    position:relative;
+    background-color: $white-color;
+}
+
 
 
 
