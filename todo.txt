@@ -37,5 +37,20 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 27.05
 -> added grid of trend images
 
+28.05
+-> added hover and changed design of gallery
+
+30.05
+-> refactored colors of Backgrounds
+
+1.06 
+-> added restore section
+
+2.06
+-> finished restore section, refactored scss code 
+
+3.06
+-> todo: skill section
+
 todo: get pictures for indoor and outdoor
 fixes: clean up js code, find a fix for carousel buttons they are to wide, maybe add fig caption on hover for image, clean up scss code make more reusable code

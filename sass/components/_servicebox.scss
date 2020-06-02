@@ -1,9 +1,5 @@
 .services {
 
-    &__title {
-        color: $white-color;
-    }
-
     &__boxes {
         @include flex-row-space;
     }

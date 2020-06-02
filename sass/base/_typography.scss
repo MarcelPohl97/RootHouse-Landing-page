@@ -26,10 +26,29 @@ body {
 
     &__paragraph {
         font-size: 1.8rem;
+
+        &--text {
+            max-width: 100ch;
+            text-align: center;
+            text-shadow: 0 0 5px rgba(0,0,0,0.15);
+        }
     }
 
     &__minigraph {
         font-size: 1.2rem;
     }
+
+    &__white {
+        color: $white-color;
+    }
+
+    &__black {
+        color: $dark-color;
+    }
+
+    &__lightgreen {
+        color: $primary-color-2;
+    }
+
 }
 

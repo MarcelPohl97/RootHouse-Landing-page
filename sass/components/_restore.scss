@@ -24,6 +24,7 @@
         position: relative;
         width: 520;
         height: 315px;
+        display: inline-block;
 
         &:before {
             position:absolute;
@@ -36,8 +37,16 @@
             left:50%;
             transform: translate(-50%, 0);
             z-index:1;
-            
         }
+
+        &:hover .restore__images--front {
+            opacity:0;
+        }
+
+        &:hover .restore__images--back {
+            opacity:1;
+        }
+
     }
 
     &__images {
@@ -45,18 +54,22 @@
         position: absolute;
         height:315px;
         width:520px;
-        left: 50%;
-        top:50%;
-        transform: translate(-50%, -50%);
+        left: -260px;
+        top:0;
         border-radius: 520px 520px 0 0;
         z-index:0;
+        backface-visibility: hidden;
+        transition: all .8s ease;
+
+        &--back {
+            opacity:0;
+        }
     }
 
     &__condition {
         position: absolute;
         bottom: 2px;
-        left:50%;
-        transform: translate(-50%, 0);
+        left:-15px;
         z-index:1;
         color: $secondary-color-3;
     }
@@ -81,6 +94,30 @@
 
         &:after {
             right: 260px;
+        }
+    }
+
+    &__holder {
+        @include flex-row-center;
+    }
+
+    &__hold:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &__hold {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: $secondary-color-4;
+        @include basic-transition-interaction;
+
+        &:hover {
+            background-color: $primary-color-2;
+        }
+
+        &--active {
+            background-color: $primary-color-2;
         }
     }
 }
