@@ -7,6 +7,7 @@ body {
 .heading {
     text-transform: uppercase;
     display:inline-block;
+    text-align:center;
 
     &__primary {
         font-size: 5rem;
@@ -24,6 +25,10 @@ body {
         font-size: 2.5rem;
     }
 
+    &__quinary {
+        font-size: 2rem;
+    }
+
     &__paragraph {
         font-size: 1.8rem;
 
@@ -32,6 +37,20 @@ body {
             text-align: center;
             text-shadow: 0 0 5px rgba(0,0,0,0.15);
         }
+
+        &--textMiddle {
+            max-width: 60ch;
+            text-align: left;
+            text-shadow: 0 0 5px rgba(0,0,0,0.15);
+        }
+
+        &--textSmall {
+            max-width: 30ch;
+        }
+    }
+
+    &__smallgraph {
+        font-size: 1.5rem;
     }
 
     &__minigraph {
@@ -48,6 +67,11 @@ body {
 
     &__lightgreen {
         color: $primary-color-2;
+    }
+
+    &__doubleTitle {
+        display:block;
+        text-align:center;
     }
 
 }

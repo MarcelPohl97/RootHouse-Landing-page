@@ -50,7 +50,11 @@ Design:https://www.instagram.com/p/BjWl620lFcT/?igshid=1gjjyy2fjkfxu
 -> finished restore section, refactored scss code 
 
 3.06
--> todo: skill section
+-> finished skill section, redesigned indoor and outdoor trends
 
-todo: get pictures for indoor and outdoor
+4.06
+-> newsletter section, footer
+
+todo: 
 fixes: clean up js code, find a fix for carousel buttons they are to wide, maybe add fig caption on hover for image, clean up scss code make more reusable code
+things to add: linear gradient to section titles also make them hoverable like natours, make trends section like natours section with 3 pics and some text

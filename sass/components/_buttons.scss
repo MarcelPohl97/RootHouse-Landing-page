@@ -17,9 +17,10 @@
         background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
     }
 
-    &--brown {
+    &--whiteBorder {
         color: $white-color;
-        background: $brown-color;
+        background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));;
+        border:2px solid $white-color !important;
     }
 }
 

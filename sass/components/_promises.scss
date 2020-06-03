@@ -1,0 +1,94 @@
+.promises {
+
+    &__outerCircle {
+        padding:1rem;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        height:500px;
+        width:500px;
+        border-radius: 500px;
+        background-color: $white-color;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.09), 
+                0 2px 4px rgba(0,0,0,0.09), 
+                0 4px 8px rgba(0,0,0,0.09), 
+                0 8px 16px rgba(0,0,0,0.09),
+                0 16px 32px rgba(0,0,0,0.09), 
+                0 32px 64px rgba(0,0,0,0.09);
+    }
+
+    &__innerCircle {
+        height:480px;
+        width:480px;
+        border-radius: 480px;
+        @include flex-column-center;
+        background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));;
+    }
+
+    &__promise {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius:3px;
+        padding: 1rem;
+        @include flex-column-center;
+        @include basic-transition-interaction;
+        border-top:3px solid $white-color;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.09), 
+                0 2px 4px rgba(0,0,0,0.09), 
+                0 4px 8px rgba(0,0,0,0.09), 
+                0 8px 16px rgba(0,0,0,0.09),
+                0 16px 32px rgba(0,0,0,0.09), 
+                0 32px 64px rgba(0,0,0,0.09);
+
+        &:hover {
+            transform: scale(1.05) translate(-48%, -53%) !important;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.12), 
+                0 2px 4px rgba(0,0,0,0.12), 
+                0 4px 8px rgba(0,0,0,0.12), 
+                0 8px 16px rgba(0,0,0,0.12),
+                0 16px 32px rgba(0,0,0,0.12), 
+                0 32px 64px rgba(0,0,0,0.12);
+        }
+
+        &--1 {
+            top: 15%;
+            left:50%;
+        }
+
+        &--2 {
+            top: 20%;
+            left:75%;
+        }
+
+        &--3 {
+            top: 50%;
+            left:85%;
+        }
+
+        &--4 {
+            top: 80%;
+            left:75%;
+        }
+
+        &--5 {
+            top:85%;
+            left:50%;
+        }
+
+        &--6 {
+            top: 80%;
+            left:25%;
+        }
+
+        &--7 {
+            top: 50%;
+            left:15%;
+        }
+
+        &--8 {
+            top: 20%;
+            left:25%;
+        }
+    }
+}
