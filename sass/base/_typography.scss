@@ -44,9 +44,14 @@ body {
             text-shadow: 0 0 5px rgba(0,0,0,0.15);
         }
 
+        &--textMiddle-2 {
+            max-width: 50ch;
+        }
+
         &--textSmall {
             max-width: 30ch;
         }
+
     }
 
     &__smallgraph {
@@ -67,6 +72,10 @@ body {
 
     &__lightgreen {
         color: $primary-color-2;
+    }
+
+    &__lightgrey {
+        color: $secondary-color-4;
     }
 
     &__doubleTitle {

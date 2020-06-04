@@ -1,0 +1,56 @@
+.footer {
+
+    &__info {
+        @include flex-row-center;
+    }
+
+    &__line {
+        height: 2px;
+        background-color: $secondary-color-4;
+
+        &--short {
+            width:25px;
+        }
+
+        &--auto {
+            width: 50%;
+        }
+    }
+
+    &__brand {
+        @include flex-column-center;
+        width: 150px;
+        height: 150px;
+        border-radius:150px;
+        background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
+        border: 3px solid $dark-color;
+    }
+
+    &__copyright {
+        width: 100%;
+        @include flex-row-space;
+
+        &--text {
+            text-align: center;
+            white-space: nowrap;
+        }
+
+    }
+
+    &__partner {
+        @include flex-row-center;
+    }
+
+    &__customer {
+        @include flex-row-center;
+    }
+
+    &__testimonial {
+        margin-right: .5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+}

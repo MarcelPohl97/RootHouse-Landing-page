@@ -20,7 +20,19 @@
     &--whiteBorder {
         color: $white-color;
         background: linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));;
-        border:2px solid $white-color !important;
+        border:3px solid $white-color !important;
+    }
+
+    &--greenBorder {
+        color: $white-color;
+        border:3px solid $primary-color-2 !important;
+        background: transparent;
+    }
+
+    &--blackBorder {
+        color: $dark-color;
+        border:3px solid $dark-color !important;
+        background: transparent;
     }
 }
 

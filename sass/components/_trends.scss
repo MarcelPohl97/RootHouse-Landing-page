@@ -1,18 +1,16 @@
 
 .trends {
-    @include flex-row-space;
+    @include flex-row-center;
     width: 100%;
     align-items: baseline !important;
 
     &__info {
         width: 50%;
-        margin-left: 10rem;
     }
 
     &__images {
         width: 50%;
         position: relative;
-        margin-left: 10rem;
     }
 
     &__image {

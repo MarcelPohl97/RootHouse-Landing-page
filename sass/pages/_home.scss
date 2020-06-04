@@ -68,6 +68,19 @@
     background-color: $white-color;
 }
 
+.buildLocation-section {
+    @include flex-row-center;
+    position:relative;
+}
+
+.footer {
+    width: 100%;
+    @include site-padding;
+    @include flex-column-center;
+    position:relative;
+    background-color: $white-color;
+}
+
 
 
 

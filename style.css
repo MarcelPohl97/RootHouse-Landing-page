@@ -47,6 +47,8 @@ body {
       max-width: 60ch;
       text-align: left;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+    .heading__paragraph--textMiddle-2 {
+      max-width: 50ch; }
     .heading__paragraph--textSmall {
       max-width: 30ch; }
   .heading__smallgraph {
@@ -59,12 +61,17 @@ body {
     color: #111B05; }
   .heading__lightgreen {
     color: #a8e063; }
+  .heading__lightgrey {
+    color: #9D9E97; }
   .heading__doubleTitle {
     display: block;
     text-align: center; }
 
 .margin-top-big {
   margin-top: 6rem; }
+
+.margin-bottom-big {
+  margin-bottom: 6rem; }
 
 .margin-medium {
   margin: 4rem 0; }
@@ -86,6 +93,12 @@ body {
 
 .margin-big-sides {
   margin: 0 6rem; }
+
+.margin-mega-sides {
+  margin: 0 10rem; }
+
+.margin-omega-sides {
+  margin: 0 12rem; }
 
 .margin-big-highs {
   margin: 6rem 0; }
@@ -257,6 +270,74 @@ body {
     font-size: 6rem;
     color: #a8e063; }
 
+.footer__info {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__line {
+  height: 2px;
+  background-color: #9D9E97; }
+  .footer__line--short {
+    width: 25px; }
+  .footer__line--auto {
+    width: 50%; }
+
+.footer__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  border: 3px solid #111B05; }
+
+.footer__copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__copyright--text {
+    text-align: center;
+    white-space: nowrap; }
+
+.footer__partner {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__customer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__testimonial {
+  margin-right: .5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover; }
+
+.form {
+  display: flex; }
+  .form__input {
+    border: none;
+    background-color: #FDFDFB;
+    padding: 2.75rem 2.5rem;
+    color: #9D9E97;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    outline: none; }
+  .form__name {
+    margin-right: .2rem;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem; }
+  .form__email {
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem; }
+
 .awards {
   text-align: center; }
   .awards__icon {
@@ -293,7 +374,17 @@ body {
 .btn-primary--whiteBorder {
   color: #FDFDFB;
   background: linear-gradient(to right, #56ab2f, #a8e063);
-  border: 2px solid #FDFDFB !important; }
+  border: 3px solid #FDFDFB !important; }
+
+.btn-primary--greenBorder {
+  color: #FDFDFB;
+  border: 3px solid #a8e063 !important;
+  background: transparent; }
+
+.btn-primary--blackBorder {
+  color: #111B05;
+  border: 3px solid #111B05 !important;
+  background: transparent; }
 
 .btn-secondary, .btn-secondary:link, .btn-secondary:visited {
   text-transform: uppercase;
@@ -402,6 +493,30 @@ body {
 
 .flickity-button-icon {
   display: none; }
+
+.buildLocation {
+  position: relative; }
+  .buildLocation__img {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .buildLocation__left {
+    background-color: #CAAA79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 6rem 6rem; }
+  .buildLocation__right {
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 6rem 6rem; }
 
 .promises__outerCircle {
   padding: 1rem;
@@ -592,17 +707,15 @@ body {
 
 .trends {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   align-items: baseline !important; }
   .trends__info {
-    width: 50%;
-    margin-left: 10rem; }
+    width: 50%; }
   .trends__images {
     width: 50%;
-    position: relative;
-    margin-left: 10rem; }
+    position: relative; }
   .trends__image {
     position: absolute;
     width: 365px;
@@ -689,6 +802,22 @@ body {
   background: linear-gradient(to right, #56ab2f, #a8e063); }
 
 .trends-section {
+  width: 100%;
+  padding: 6rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #FDFDFB; }
+
+.buildLocation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.footer {
   width: 100%;
   padding: 6rem 6rem;
   display: flex;

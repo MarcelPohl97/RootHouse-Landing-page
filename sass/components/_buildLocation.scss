@@ -1,0 +1,24 @@
+.buildLocation {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top:52%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__left {
+        background-color: $brown-color;
+        @include flex-column-center;
+        width: 50%;
+        @include site-padding;
+    }
+
+    &__right {
+        background:linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color-2, 1));
+        @include flex-column-center;
+        width: 50%;
+        @include site-padding;
+    }
+}
